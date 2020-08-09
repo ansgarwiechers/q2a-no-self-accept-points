@@ -1,0 +1,11 @@
+{
+	"name": "No Self-Accept Points",
+	"description": "Don't award points for accepted self-answers.",
+	"version": "1.0.0",
+	"date": "2020-08-09",
+	"author": "Ansgar Wiechers",
+	"author_uri": "https://ask.planetcobalt.net/",
+	"license": "GPLv3",
+	"min_q2a": "1.5",
+	"load_order": "after_db_init"
+}
