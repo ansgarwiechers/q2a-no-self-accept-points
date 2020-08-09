@@ -4,7 +4,7 @@ incentive to actually mark an answer as "best answer." However, the software
 awards the points regardless of whether the answer is from the person asking the
 question or someone else, and doesn't provide an option to change that behavior.
 This might tempt some people to increase their points by posting a lot of
-(trivial) questions and accepting their own (trivial) answer.
+(trivial) questions and accepting their own (trivial) answers.
 
 This plugin changes the default behavior so that points are only awarded to the
 user accepting an answer if that answer wasn't posted by themselves.
