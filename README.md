@@ -12,3 +12,5 @@ user accepting an answer if that answer wasn't posted by themselves.
 To activate it, copy the plugin directory to the plugins directory of your
 Question2Answer site (or clone this repository there), then log in as the site
 admin and enable the plugin under *Admin&nbsp;&rarr; Plugins*.
+
+[1]: https://question2answer.org/
