@@ -23,8 +23,8 @@ function qa_db_points_calculations() {
 
 	// Also don't grant points for a self-answer being selected.
 	// This already is the default behavior, but we enforce it here so that
-  // changing the default behavior wouldn't break the functionality of this
-  // plugin.
+	// changing the default behavior wouldn't break the functionality of this
+	// plugin.
 	if (array_key_exists('aselecteds', $points_calculations)) {
 		$points_calculations['aselecteds']['formula'] = "COUNT(*) AS aselecteds FROM ^posts AS userid_src JOIN ^posts AS questions ON questions.selchildid=userid_src.postid WHERE userid_src.userid~ AND userid_src.type='A' AND NOT (questions.userid <=> userid_src.userid)";
 	} else {
