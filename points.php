@@ -26,7 +26,7 @@ function qa_db_points_calculations() {
 	// changing the default behavior wouldn't break the functionality of this
 	// plugin.
 	if (array_key_exists('aselecteds', $points_calculations)) {
-		$points_calculations['aselecteds']['formula'] = "COUNT(*) AS aselecteds FROM ^posts AS userid_src JOIN ^posts AS answers ON userid_src.selchildid=answers.postid WHERE userid_src.userid~ AND answers.type='A' AND answers.userid<>userid_src.userid";
+		$points_calculations['aselecteds']['formula'] = "COUNT(*) AS aselecteds FROM ^posts AS userid_src JOIN ^posts AS questions ON questions.selchildid=userid_src.postid WHERE userid_src.userid~ AND questions.type='Q' AND userid_src.userid<>questions.userid";
 	} else {
 		// if key 'aselecteds' is missing: throw a warning, but continue regardless
 		trigger_error("Missing key 'aselecteds' in points calculations array", E_USER_WARNING);
